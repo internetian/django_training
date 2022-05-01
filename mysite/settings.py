@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'bookmark.apps.BookmarkConfig',
     'blog.apps.BlogConfig',
+    'taggit.apps.TaggitAppConfig',
+    'taggit_templatetags2',
 ]
 
 MIDDLEWARE = [
@@ -125,9 +127,14 @@ USE_TZ = False
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR,'static')]
 
-MEDIA_URL='.media/'
+MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 
+TAGGIT_CASE_INSENTIVE = True
+TAGGIT_LIMIT = 50
+
+DISQUS_SHORTNAME='pydjango-web-programming-wxjb3syhb1'
+DISQUS_MY_DOMAIN='http://127.0.0.1:8000'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

@@ -38,7 +38,7 @@
               <a class="dropdown-item" href="{% url 'admin:index' %}">Admin</a>
               <div class="dropdown-divider">
               </div>
-              <a class="dropdown-item" href="{% url 'blog:post_archive'}">Archive</a>
+              <a class="dropdown-item" href="{% url 'blog:post_archive' %}">Archive</a>
               <a class="dropdown-item" href="">Search</a>
           </li>
         </ul>
@@ -50,6 +50,7 @@
       </div>
   </nav>
 
+<br><br><br>
   <div class="contrainer">
     {% block content %}{% endblock %}
   </div>
